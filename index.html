@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="icon" type="image/jpg" href="restaurant icon.jpg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff223f;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ff5722;
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #444;
+            margin-top: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #ff5722;
+            color: #fff;
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        ul li a {
+            color: #ff5722;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            table th, table td {
+                border: none;
+                padding: 1rem;
+                text-align: right;
+                position: relative;
+            }
+
+            table th::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+            }
+
+            table td {
+                text-align: left;
+                padding-left: 50%;
+            }
+
+            table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 0.75rem;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>Hot and Fresh Restaurant</u></h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Menu</h2>
+
+            <h3>Main Course</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chicken Biryani</td>
+                        <td>₹210</td>
+                    </tr>
+                    <tr>
+                        <td>Mutton Biryani</td>
+                        <td>₹260</td>
+                    </tr>
+                    <tr>
+                        <td>Veg. Biryani</td>
+                        <td>₹150</td>
+                    </tr>
+                    <tr>
+                        <td>Egg Biryani</td>
+                        <td>₹180</td>
+                    </tr>
+                    <tr>
+                        <td>Fried Rice</td>
+                        <td>₹150</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Appetizers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chilli Chicken</td>
+                        <td>₹200</td>
+                    </tr>
+                    <tr>
+                        <td>Dahi Vada</td>
+                        <td>₹60</td>
+                    </tr>
+                    <tr>
+                        <td>Veg. Manchurian</td>
+                        <td>₹180</td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Tikka</td>
+                        <td>₹70</td>
+                    </tr>
+                    <tr>
+                        <td>Pepper Chicken</td>
+                        <td>₹260</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Beverages</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tea</td>
+                        <td>₹20</td>
+                    </tr>
+                    <tr>
+                        <td>Coke</td>
+                        <td>₹45</td>
+                    </tr>
+                    <tr>
+                        <td>Black Coffee</td>
+                        <td>₹50</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite</td>
+                        <td>₹40</td>
+                    </tr>
+                    <tr>
+                        <td>Maaza</td>
+                        <td>₹40</td>
+                    </tr>
+                    <tr>
+                        <td>Lemon Tea</td>
+                        <td>₹30</td>
+                    </tr>
+                    <tr>
+                        <td>Mineral Water</td>
+                        <td>₹10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Telephone: +91-9883880676</li>
+                <li>Email: <a href="mailto:tdeep2003@gmail.com">tdeep2003@gmail.com</a></li>
+                <li>Address: 2, Dum Dum Road, Kolkata</li>
+            </ul>
+        </section>
+
+        <p><u>We only use fresh ingredients in our dishes.</u></p>
+    </main>
+</body>
+</html>
